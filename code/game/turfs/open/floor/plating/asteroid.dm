@@ -301,6 +301,11 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 		for(var/edge_angle in L)
 			var/turf/closed/mineral/edge = tunnel
 			for(var/current_tunnel_width = 1 to tunnel_width)
+<<<<<<< HEAD
+=======
+				if(!sanity)
+					break
+>>>>>>> remotes/origin/master
 				edge = get_step(edge, angle2dir(dir2angle(dir) + edge_angle))
 				if(istype(edge))
 					SpawnFloor(edge)
@@ -319,7 +324,14 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 					if(!A.tunnel_allowed)
 						sanity = 0
 						break
+<<<<<<< HEAD
+=======
+				var/stored_flags = 0
+				if(tunnel.flags_1 & NO_RUINS_1)
+					stored_flags |= NO_RUINS_1
+>>>>>>> remotes/origin/master
 				var/turf/open/floor/plating/asteroid/airless/cave/C = tunnel.ChangeTurf(data_having_type, null, CHANGETURF_IGNORE_AIR)
+				C.flags_1 |= stored_flags
 				C.going_backwards = FALSE
 				C.produce_tunnel_from_data(rand(10, 15), dir)
 			else
@@ -354,7 +366,15 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 			spawned_terrain = SpawnTerrain(T)
 		if(!spawned_flora && !spawned_terrain) // No rocks beneath mob spawners / mobs.
 			SpawnMonster(T)
+<<<<<<< HEAD
 	T.ChangeTurf(turf_type, null, CHANGETURF_IGNORE_AIR)
+=======
+	var/stored_flags = 0
+	if(T.flags_1 & NO_RUINS_1)
+		stored_flags |= NO_RUINS_1
+	T = T.ChangeTurf(turf_type, null, CHANGETURF_IGNORE_AIR)
+	T.flags_1 |= stored_flags
+>>>>>>> remotes/origin/master
 
 /// Spawns a random mob or megafauna in the tunnel
 /turf/open/floor/plating/asteroid/airless/cave/proc/SpawnMonster(turf/T)

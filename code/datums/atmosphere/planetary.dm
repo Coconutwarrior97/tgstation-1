@@ -38,7 +38,10 @@
 		/datum/gas/carbon_dioxide=10,
 	)
 	restricted_gases = list(
+<<<<<<< HEAD
 		/datum/gas/bz=10,
+=======
+>>>>>>> remotes/origin/master
 		/datum/gas/miasma=10,
 		/datum/gas/plasma=0.1,
 		/datum/gas/water_vapor=0.1,

@@ -45,7 +45,11 @@
 /obj/item/clothing/shoes/bronze,
 /obj/item/clothing/head/bronze,
 /turf/open/floor/bronze{
+<<<<<<< HEAD
 	initial_gas_mix = "ICEMOON_ATMOS"
+=======
+	initial_gas_mix = "TEMP=2.7"
+>>>>>>> remotes/origin/master
 	},
 /area/icemoon/surface)
 "z" = (
@@ -58,7 +62,11 @@
 /area/icemoon/surface)
 "A" = (
 /turf/open/floor/bronze{
+<<<<<<< HEAD
 	initial_gas_mix = "ICEMOON_ATMOS"
+=======
+	initial_gas_mix = "TEMP=2.7"
+>>>>>>> remotes/origin/master
 	},
 /area/icemoon/surface)
 "H" = (
@@ -76,7 +84,11 @@
 	},
 /obj/item/pen,
 /turf/open/floor/bronze{
+<<<<<<< HEAD
 	initial_gas_mix = "ICEMOON_ATMOS"
+=======
+	initial_gas_mix = "TEMP=2.7"
+>>>>>>> remotes/origin/master
 	},
 /area/icemoon/surface)
 "R" = (
@@ -84,7 +96,11 @@
 	name = "empowered bronze spear"
 	},
 /turf/open/floor/bronze{
+<<<<<<< HEAD
 	initial_gas_mix = "ICEMOON_ATMOS"
+=======
+	initial_gas_mix = "TEMP=2.7"
+>>>>>>> remotes/origin/master
 	},
 /area/icemoon/surface)
 "U" = (

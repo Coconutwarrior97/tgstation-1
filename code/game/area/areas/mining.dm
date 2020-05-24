@@ -153,6 +153,28 @@
 	requires_power = TRUE
 	ambientsounds = MINING
 
+<<<<<<< HEAD
+=======
+/area/icemoon/surface/outdoors // weather happens here
+	name = "Icemoon Wastes"
+	outdoors = TRUE
+
+/area/icemoon/surface/outdoors/labor_camp
+	name = "Icemoon Labor Camp"
+	flora_allowed = FALSE
+
+/area/icemoon/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "unexplored"
+	tunnel_allowed = TRUE
+	mob_spawn_allowed = TRUE
+
+/area/icemoon/surface/outdoors/unexplored/rivers // rivers spawn here
+	icon_state = "danger"
+
+/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters
+	mob_spawn_allowed = FALSE
+
+>>>>>>> remotes/origin/master
 /area/icemoon/underground
 	name = "Icemoon Caves"
 	outdoors = TRUE
@@ -174,6 +196,7 @@
 /area/icemoon/underground/unexplored/rivers // rivers spawn here
 	icon_state = "danger"
 
+<<<<<<< HEAD
 /area/icemoon/underground/explored
 	name = "Icemoon Underground"
 	flora_allowed = FALSE
@@ -196,3 +219,8 @@
 
 /area/icemoon/surface/outdoors/unexplored/rivers/no_monsters
 	mob_spawn_allowed = FALSE
+=======
+/area/icemoon/underground/explored // ruins can't spawn here
+	name = "Icemoon Underground"
+	flora_allowed = FALSE
+>>>>>>> remotes/origin/master
